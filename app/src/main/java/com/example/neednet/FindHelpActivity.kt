@@ -27,7 +27,7 @@ class FindHelpActivity : AppCompatActivity() {
         requestHelpBtn = findViewById(R.id.btnRequestHelp)
 
         helpList.layoutManager = LinearLayoutManager(this)
-        helpList.adapter = HelpRequestAdapter(dummyHelpRequests)
+        helpList.adapter = HelpRequestAdapter(this, dummyHelpRequests)
 
         requestHelpBtn.setOnClickListener {
             // TODO: Navigate to RequestHelpActivity

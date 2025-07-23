@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707176179817",
+    "project_id": "neednet-1b746",
+    "storage_bucket": "neednet-1b746.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707176179817:android:7a882bfd412c1643d41af8",
+        "android_client_info": {
+          "package_name": "com.example.neednet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Pl71_Tju-0qFbeBtt5ddv1l-O_9sdMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

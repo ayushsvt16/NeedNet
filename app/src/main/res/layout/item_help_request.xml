@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardHelpRequest"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="12dp"
@@ -14,7 +15,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Help Title"
@@ -22,7 +23,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvCategory"
+            android:id="@+id/textDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Category"
@@ -31,7 +32,7 @@
             android:layout_marginTop="4dp" />
 
         <TextView
-            android:id="@+id/tvDistance"
+            android:id="@+id/textTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Distance"
@@ -39,4 +40,4 @@
             android:textColor="#009688"
             android:layout_marginTop="2dp" />
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

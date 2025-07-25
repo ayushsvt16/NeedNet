@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- OpenStreetMap view -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp"
+        />
+
+    <!-- Button to use current location -->
+    <Button
+        android:id="@+id/btnUseCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use My Current Location"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white" />
+
+    <!-- Editable address field -->
+    <EditText
+        android:id="@+id/editAddress"
+        android:hint="Tap on map or enter address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:inputType="textPostalAddress"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to save selected location -->
+    <Button
+        android:id="@+id/btnSelectLocation"
+        android:text="Save Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

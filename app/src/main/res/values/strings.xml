@@ -2,5 +2,11 @@
     <string name="app_name">NeedNet</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string-array name="help_types">
+        <item>Lend</item>
+        <item>Sell</item>
+        <item>Donate</item>
+        <item>Rent</item>
+        <item>Volunteer</item>
+    </string-array>
 </resources>

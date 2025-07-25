@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NeedNet" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
     </style>
 
     <style name="Theme.NeedNet" parent="Base.Theme.NeedNet" />

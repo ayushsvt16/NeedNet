@@ -5,14 +5,114 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OfferHelpActivity"
-    android:background="@color/white">
+    android:background="@color/background"
+    android:padding="16dp"
+    tools:context=".OfferHelpActivity">
 
+    <!-- Title -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Offer help"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="340dp" />
+        android:layout_marginTop="32dp"
+        android:text="Offer Help"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Location input -->
+
+
+    <!-- Type of help Spinner -->
+
+    <!-- What you are offering -->
+
+
+    <!-- Help message input -->
+
+    <!-- Submit button -->
+
+    <TextView
+        android:id="@+id/editLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/edittext_background"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:inputType="none"
+        android:padding="12dp"
+        android:text="Tap to select location"
+        android:textColor="@color/black"
+        android:textColorHint="#646464"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <Spinner
+        android:id="@+id/spinnerHelpType"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/editOfferTitle"
+        tools:layout_editor_absoluteX="0dp"
+        />
+
+    <EditText
+        android:id="@+id/editOfferTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:hint="What are you offering?"
+        android:inputType="textCapSentences"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#646464"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editLocation" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="top|start"
+        android:hint="Describe how you can help"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#646464"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerHelpType" />
+
+    <Button
+        android:id="@+id/btnSubmitOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/primaryColor"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editMessage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
